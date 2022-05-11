@@ -2,8 +2,7 @@ import { CustomError } from "../models";
 import { AppDataSource } from "../data-source";
 import { User } from "../entities";
 import bcrypt from "bcryptjs";
-
-interface UserCreateService extends User {}
+import { UserCreateService } from "../interfaces";
 
 export async function userCreateService({
   name,
